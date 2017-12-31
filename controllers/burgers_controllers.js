@@ -1,6 +1,6 @@
 //Import express and create the router
 var express = require("express");
-var router = express.Router();
+var router  = express.Router();
 
 // Import the model (burger.js) to use its database functions.
 var burger = require("../models/burger.js");
@@ -16,7 +16,7 @@ router.get("/", function(req, res) {
 
 router.post("/api/burgers", function(req, res) {
     burger.insertOne([
-        "name", "devoured"
+        "burger_name", "devoured"
     ], [
         req.body.name, req.body.devoured
     ], function(result) {
