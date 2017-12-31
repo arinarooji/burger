@@ -2,50 +2,44 @@
 $(function() {
 
     $(".devour").on("click", function(event) {
-      /*
-        var id = $(this).data("id");
-      var newSleep = $(this).data("newsleep");
+        var id        = $(this).data("id");
+        var newDevour = $(this).data("devoured");
   
-      var newSleepState = {
-        sleepy: newSleep
-      };
-  
-      // Send the PUT request.
-      $.ajax("/api/cats/" + id, {
+        var newDevourState = {
+            devoured: parseInt(newDevour)
+        };
+
+        // Send the PUT request.
+        $.ajax("/api/burgers/" + id, {
         type: "PUT",
-        data: newSleepState
-      }).then(
+        data: newDevourState
+        }).then(
         function() {
-          console.log("changed sleep to", newSleep);
-          // Reload the page to get the updated list
-          location.reload();
-        }
-      );
-      */
-      console.log("Devoured!");
+            console.log("Eaten. Devoured?", newDevour);
+            // Reload the page to get the updated list
+            location.reload();
+        });
     });
   
     $(".create-form").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
-  
+      
       var newBurger = {
         name: $("#burg").val().trim(),
       };
       
-      console.log(newBurger);
-      /*
       // Send the POST request.
-      $.ajax("/api/cats", {
+      $.ajax("/api/burgers", {
         type: "POST",
-        data: newCat
+        data: newBurger
       }).then(
         function() {
-          console.log("created new cat");
+          console.log("created new burger");
           // Reload the page to get the updated list
           location.reload();
         }
-      );*/
+      );
     });
 
 });
