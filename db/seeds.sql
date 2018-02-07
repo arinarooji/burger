@@ -1,4 +1,3 @@
--- Insert sample burgers.
-INSERT INTO burgers (burger_name, devoured) VALUES ("Cheeseburger", false);
-INSERT INTO burgers (burger_name, devoured) VALUES ("Double Cheeseburger", false);
-INSERT INTO burgers (burger_name, devoured) VALUES ("Triple Cheeseburger", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Cheese Burger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Hamburger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Pizza Burger', FALSE);
