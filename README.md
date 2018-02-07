@@ -4,6 +4,7 @@
 ### Enter burgers into the database and eat up!
 
 #### Guide
+- Visit https://burger-kaa.herokuapp.com/burgers
 - Start by entering a burger name in the text area.
 - Click the **Submit** button to add it to the database.
 - When you're ready to eat, simply click the **Devour It** button next to your burger. Delicious!
