@@ -1,6 +1,5 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-var connection = require('../config/connection');
 var PORT = process.env.PORT || 8000;
 var app = express();
 
